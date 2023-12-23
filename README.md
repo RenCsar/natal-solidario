@@ -31,7 +31,7 @@
 <a id="Descrição"></a>
 ### Descrição
 
-O projeto consiste em um projeto natalino do <a href="https://vainaweb.com.br/" target="_blank">Vai Na Web</a> onde foi proposto criar um site **responsivo** com o objetivo de contribuir para um natal inesquecível para milhares de crianças.
+O projeto Natal Solidário consiste em site **responsivo** que tem o objetivo de contribuir para um natal inesquecível para milhares de crianças.
 
 <a id="Tecnologias"></a>
 ### Tecnologias utilizadas
