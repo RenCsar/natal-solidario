@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+:root {
+  --branco: #f5f5f5;
+  --rosa: rgba(255, 233, 232, 1);
+  --vermelho: rgba(205, 60, 50, 1);
+  --vermelho-hover: #f32;
+  --preto: rgba(22, 22, 22, 1);
+
+  --bg-header: var(--rosa);
+  --bg-body: var(--branco);
+  --bg-section-claro: var(--branco);
+  --bg-section-escuro: var(--rosa);
+  --bg-footer: var(--rosa);
+
+  --bg-btn-primary: var(--vermelho);
+  --bg-btn-primary-hover: var(--vermelho-hover);
+
+  --border-radius-sm: 4px;
+
+  --font-family-primary: "Archivo", sans-serif;
+  --font-color-primary: var(--preto);
+  --font-color-secondary: var(--vermelho);
+  --font-color-text: var(--preto);
+
+  --btn-font-color: var(--branco);
+
+  --padding-lateral: 210px;
+  --padding-block: 70px;
+  --margin-sm: 20px;
+  --margin-md: 70px;
+
+  --transition: 0.95s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--azul-escuro);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vermelho);
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--bg-body);
+}
+
+.banner,
+footer {
+  background-color: var(--bg-footer);
+}
+
+.banner,
+.timer,
+.doacao,
+footer {
+  padding-inline: var(--padding-lateral);
+  width: 100%;
+}
+
+.banner,
+.timer {
+  padding-block: var(--padding-block);
+}
+
+button {
+  background-color: var(--bg-btn-primary);
+  color: var(--btn-font-color);
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition);
+}
+
+button:hover {
+  transition: var(--transition);
+  background-color: var(--bg-btn-primary-hover);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.banner,
+.doacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .text-container,
+.timer .text-container,
+.doacao .text-container {
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner .text-container {
+  justify-content: flex-start;
+}
+
+.banner .text-container h1,
+.doacao .text-container h2 {
+  line-height: 30px;
+}
+
+.banner .text-container h1 span {
+  color: var(--font-color-secondary);
+}
+
+.banner .text-container p,
+.timer .text-container p,
+.doacao .text-container p {
+  line-height: 23px;
+  color: var(--font-color-text);
+}
+
+.banner .img-container img {
+  width: 400px;
+  height: 270px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer .text-container {
+  align-items: center;
+}
+
+.timer .text-container P {
+  text-align: center;
+}
+
+.timer .text-container span {
+  color: var(--font-color-secondary);
+  font-weight: bold;
+  font-size: 40px;
+  margin-block: 10px;
+}
+
+.timer .img-container img {
+  width: 320px;
+  height: 205px;
+}
+
+.doacao {
+  margin-bottom: var(--margin-md);
+}
+
+.doacao .img-container img {
+  height: 290px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 15px;
+}
+
+footer .social-midia {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+footer .social-midia img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1220px) {
+  .banner,
+  .doacao {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .banner .text-container,
+  .doacao .text-container {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 860px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 35px;
+    padding-inline: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner,
+  .timer,
+  .doacao,
+  footer {
+    padding-inline: 5px;
+  }
+
+  .banner .text-container,
+  .timer .text-container,
+  .doacao .text-container,
+  footer {
+    width: 95%;
+  }
+
+  .banner .img-container img,
+  .timer .img-container img {
+    width: 95%;
+    height: 95%;
+  }
+
+  .timer .text-container span {
+    font-size: 30px;
+  }
+
+  footer .social-midia {
+    gap: 15px;
+    justify-content: center;
+  }
+}
