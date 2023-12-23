@@ -16,15 +16,11 @@
 
 <br>
 
-
-<!--
-
 <h1 align="center">  
   <p align="center">
-  <img width="230" height="450" src="https://i.imgur.com/qeKcETR.gif" alt="site-mobile"><br><br>
+  <img width="230" height="450" src="https://i.imgur.com/6lW2tuh.gif" alt="site-mobile"><br><br>
 </p>
-
--->
+ 
 <h1 align="center">  
   <p align="center">
   <img width="600" height="800" src="./assets/desktop.webp" alt="site beat"><br><br>
