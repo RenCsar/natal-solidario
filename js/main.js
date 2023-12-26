@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     function updateCountdown() {
-        const christmasDate = new Date('December 25, 2023 00:00:00').getTime();
+        const date = new Date();
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        let year = date.getFullYear();
+        
+        if(month === 12 && day > 25) {
+            year += 1;
+        }
+
+        const christmasDate = new Date(`December 25, ${year} 00:00:00`).getTime();
 
         const now = new Date().getTime();
         const timeRemaining = christmasDate - now;
