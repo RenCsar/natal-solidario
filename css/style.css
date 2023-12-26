@@ -170,7 +170,7 @@ button:hover {
 .timer .text-container span {
   color: var(--font-color-secondary);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin-block: 10px;
 }
 
